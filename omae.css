@@ -1,0 +1,193 @@
+body,html{
+    margin:0;
+    font-size: 16px;
+}
+body{
+    background-image: url('./sozai/omaebg.JPG');
+    background-size: cover;
+    background-color: rgba(255,255,255, 0.7);
+    background-blend-mode: overlay;
+    background-position: center;
+    }
+
+header{
+    width:100%;
+    height:80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align:right;
+}
+.headerhome{
+    position: relative;
+    display: inline-block;
+    padding: 26px;
+    font-size: 16px;
+}
+.midashi{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:black;
+    margin:3rem 0 2rem 0;
+}
+.midashi::before,
+.midashi::after{
+    content: "";
+    flex:1;
+    border-bottom: 3px solid black;
+}
+.midashi span{
+    position:relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: bold;
+    padding:10px 20px;
+}
+
+.syokai{
+    margin: 5rem auto;
+    position: relative;
+    width:30rem;
+    background: linear-gradient(rgba(167, 245, 99, 0.5),rgba(228, 255, 166, 0.5));
+    border-radius: 25px;
+    border:5px solid #379124;
+    color:black;
+    padding: 1rem 1.5rem;
+}
+.syokai img{
+    position:absolute;
+    margin:7rem 4rem;
+    height: 27rem;
+}
+h3{
+    text-align: center;
+    margin: 0;
+    padding:0 1rem;
+    font-size:3.5rem;
+    border-bottom: 4px solid #4ba739;
+}
+.syokai p{
+    font-size: 1.6rem;
+}
+
+.left{
+    left: 5rem;
+    opacity: 0;
+    transform: translate(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.left.visible{
+    opacity:1;
+    transform: translateX(0);
+}
+.explainleft{
+    padding-left: 6rem;
+}
+.left img{
+    top:-7rem;
+    left:-15rem;
+}
+
+.outlinks{
+    width:100%;
+    text-align: center;
+    padding:0rem 0 5rem 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: black;
+    margin:0;
+    padding:2rem;
+}
+.outlinkbutton{
+    display: inline-block;
+    margin: 0 1rem;
+}
+.outlinks button{
+    margin: 1rem;
+    height: 8rem;
+    width: 16rem;
+    border:2px solid rgb(144, 144, 144);
+}
+.outlinks p{
+    margin:0 0 2rem 0;
+}
+.outli:before{
+    position:absolute;
+    content: '';
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    opacity:0;
+    background-color: rgb(12, 7, 30);
+    z-index: 1;
+}
+.outli:hover::before{
+    opacity:0.2;
+}
+.xlink{
+    background-image: url(sozai/xlink.JPG);
+    background-size: 100%;
+    position: relative;
+}
+.pixivlink{
+    background-image: url(sozai/pixivlink.JPG);
+    background-size: 100%;
+    position: relative;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    font-size:14px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media (max-width:800px){
+    html,body{
+        font-size: 9px;
+    }
+    .midashi span{
+        font-size:35px;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+    .outlinks button{
+        margin: 1rem;
+        height: 12rem;
+        width: 24rem;
+    }
+    .outlinks p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:560px){
+    html,body{
+        font: size 7px;
+    }
+    h3{
+        font-size: 3.5rem;
+        padding:3px;
+    }
+    .syokai p{
+        font-size: 2rem;
+        padding:4px;
+    }
+    .explainleft{
+        padding-left: 33px;
+    }
+    .syokai img{
+        height:280px;
+        top:-40px;
+        margin:7rem 1rem;
+    }
+    .left img{
+        left: -125px;
+    }
+}

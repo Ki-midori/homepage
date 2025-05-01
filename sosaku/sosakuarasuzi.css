@@ -1,0 +1,124 @@
+body,html{
+    font-size:16px;
+    margin:0;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align:right;
+}
+a{
+    display:inline-block;
+}
+.myself{
+    width: 50px;
+    height: 50px;
+    padding:20px;
+}
+.headerhome{
+    position: relative;
+    display: inline-block;
+    padding: 26px;
+    font-size: 16px;
+}
+
+.syokai{
+    text-align: center;
+}
+h1{
+    color:white;
+    font-size: 2.5rem;
+    margin: 3rem 0 0 0;
+}
+.logoimg{
+    height:16rem;
+}
+h2{
+    text-align: center;
+    color:white;
+    font-size: 1.6rem;
+    margin: -1.5rem 0 2rem 0;
+}
+.arasuzititle{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:white;
+    margin:3rem 0 2rem 0;
+}
+.arasuzititle::before,
+.arasuzititle::after{
+    content: "";
+    flex:1;
+    border-bottom: 3px solid white;
+}
+.arasuzititle span{
+    position:relative;
+    z-index: 1;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding:10px 20px;
+}
+
+.arasuzi{
+    text-align: center;
+    background-color: rgba(255,255,255, 0.6);
+    margin:0 15rem;
+    padding-bottom: 0.5rem;
+}
+.arasuzi img{
+    width:100%;
+}
+h3{
+    font-weight: normal;
+    font-size:1.3rem;
+    margin:3rem;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+h3.visible{
+    opacity:1;
+}
+h3 span{
+    display: inline-block;
+}
+
+.yorosiku{
+    background-color: rgba(255,255,255, 0.7);
+    font-size: 16px;
+    margin:1rem 15rem;
+    padding:2rem 0 3.5rem 0;
+    text-align: center;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    font-size:14px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media (max-width:1100px){
+    .arasuzi{
+        margin: 0 7rem;
+    }
+    .yorosiku{
+        margin:1rem 7rem;
+    }
+}
+
+@media (max-width:730px){
+    html,body{
+        font-size: 12px;
+    }
+    .arasuzi{
+        margin:0 0rem;
+    }
+    .yorosiku{
+        margin:1rem 0rem;
+    }
+}

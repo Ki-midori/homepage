@@ -1,0 +1,181 @@
+body,html{
+    font-size:16px;
+    margin:0;
+    overflow-x: hidden;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align:right;
+}
+a{
+    display:inline-block;
+}
+.myself{
+    width: 50px;
+    height: 50px;
+    padding:20px;
+}
+.headerhome{
+    position: relative;
+    display: inline-block;
+    padding: 26px;
+    font-size: 16px;
+}
+
+.ichiran{
+    text-align: center;
+}
+h1{
+    color:white;
+    font-size: 2.5rem;
+    margin: 3rem 0 0 0;
+}
+h2{
+    text-align: center;
+    color:white;
+    font-size: 1.6rem;
+    margin: -1.5rem 0 2rem 0;
+}
+
+.midashi{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:white;
+    margin-top:3rem;
+}
+.midashi::before,
+.midashi::after{
+    content: "";
+    flex:1;
+    border-bottom: 3px solid white;
+}
+.midashi span{
+    position:relative;
+    z-index: 1;
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding:10px 10px;
+}
+
+.syokai{
+    margin: 10rem auto;
+    position: relative;
+    width:30rem;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+}
+.syokai img{
+    position:absolute;
+    height: 37rem;
+}
+h3{
+    text-align: center;
+    margin: 0;
+    padding:0 1rem;
+    font-size:3.5rem;
+}
+.syokai p{
+    font-size: 1.6rem;
+}
+
+.left{
+    left: 5rem;
+    opacity: 0;
+    transform: translate(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.left.visible{
+    opacity:1;
+    transform: translateX(0);
+}
+.explainleft{
+    padding-left: 6rem;
+}
+.left img{
+    top:-7rem;
+    left:-15rem;
+}
+
+.right{
+    right:5rem;
+    opacity: 0;
+    transform: translate(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.right.visible{
+    opacity:1;
+    transform: translateX(0);
+}
+.explainright{
+    padding-right: 6rem;
+}
+.right img{
+    top:-7rem;
+    right:-15rem;
+}
+
+.arasuzirink{
+    font-size: 16px;
+    background-color: rgba(255,255,255, 0.7);
+    margin:1rem 0;
+    padding:3rem 0 4rem 0;
+    text-align: center;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100px;
+    font-size:14px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media (max-width:800px){
+    html,body{
+        font-size: 9px;
+    }
+    .midashi span{
+        font-size:30px;
+    }
+}
+
+@media (max-width:560px){
+    html,body{
+        font-size: 7px;
+    }
+    h1{
+        font-size:30px;
+    }
+    h2{
+        font-size:19px;
+    }
+    h3{
+        font-size: 3.5rem;
+        padding:3px;
+    }
+    .syokai p{
+        font-size: 2rem;
+        padding:4px;
+    }
+    .explainleft{
+        padding-left: 33px;
+    }
+    .explainright{
+        padding-right: 33px;
+    }
+    .syokai img{
+        height:280px;
+        top:-40px !important;
+    }
+    .left img{
+        left: -130px;
+    }
+    .right img{
+        left:160px;
+    }
+}
