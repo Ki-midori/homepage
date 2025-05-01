@@ -1,6 +1,7 @@
 body,html{
     margin:0;
     font-size: 16px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 body{
     background-image: url('./sozai/omaebg.JPG');
