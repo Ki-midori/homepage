@@ -4,6 +4,7 @@ body{
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 header{
