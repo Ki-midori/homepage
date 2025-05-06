@@ -198,6 +198,30 @@ h2{
     position: relative;
 }
 
+.specialthanks{
+    background-color: white;
+    width:100%;
+    text-align: center;
+    padding:4rem 0 1rem 0;
+}
+.specialthanks h2{
+    padding-bottom: 0.5rem;
+}
+.specialthanks p{
+    margin:0 3rem 4rem 3rem;
+}
+.specialthanks img{
+    height: 55px;
+}
+.bannerbutton{
+    display: inline-block;
+    margin: 0 5rem;
+}
+.bannerli{
+    background-size: 100%;
+    position: relative;
+}
+
 footer{
     background-color: white;
     height: 100px;
