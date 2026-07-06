@@ -3,6 +3,7 @@ body,html{
     margin:0;
     overflow-x: hidden;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-blend-mode: overlay;
 }
 
 header{
@@ -61,6 +62,19 @@ h2{
     font-size: 2.8rem;
     font-weight: bold;
     padding:10px 10px;
+}
+
+.worlds{
+    position: relative;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.6);
+    margin:0 10rem;
+    padding: 2rem 0rem;
+}
+
+.worlds p{
+    font-size: 1.6rem;
+    padding: 0 4rem;
 }
 
 .syokai{
@@ -178,5 +192,8 @@ footer{
     }
     .right img{
         left:160px;
+    }
+    .worlds img{
+        height:200px;
     }
 }

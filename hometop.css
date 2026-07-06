@@ -29,28 +29,16 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .konnichiha video{
-    position: fixed;
-    width: 105%;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
     opacity:0.5;
     z-index: -1;
-    transform: translateY(0);
-    will-change: transform;
 }
-@keyframes parallax{
-    from{
-        transform:translateY(0);
-    }
-    to{
-        transform:translateY(-300px);
-    }
 
-}
-.konnichiha video{
-    animation: parallax linear;
-    animation-timeline: scroll();
-}
 .konnichiha h1{
     position: absolute;
     font-size: 4rem;
@@ -202,7 +190,7 @@ h2{
     background-color: white;
     width:100%;
     text-align: center;
-    padding:4rem 0 1rem 0;
+    padding:4rem 0 0 0;
 }
 .specialthanks h2{
     padding-bottom: 0.5rem;
@@ -215,12 +203,13 @@ h2{
 }
 .bannerbutton{
     display: inline-block;
-    margin: 0 5rem;
+    margin: 0 4rem;
 }
 .bannerli{
     background-size: 100%;
     position: relative;
 }
+
 
 footer{
     background-color: white;
@@ -299,5 +288,12 @@ footer img{
     .charalink{
         background-size: 300px;
         background-position: -40px -20px;
+    }
+}
+
+@media (max-width:550px){
+    .bannerbutton{
+        display: inline-block;
+        margin:0;
     }
 }
